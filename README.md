@@ -38,7 +38,7 @@ go run main.go
 
 - The service will start at http://localhost:8080.
 
-- The project uses a database hosted in Neon.
+- The project uses a database hosted in Neon(https://neon.com).
 
 - Go automatically uses the DSN in main.go to connect to the database.
 
@@ -82,8 +82,6 @@ curl http://localhost:8080/events
 - Input validation ensures:
     Title is non-empty and ≤ 100 characters.
     Start_time is before end_time.
-
-- The service uses context for all DB queries for safety and timeout handling.
 
 - Clean Architecture ensures business logic is decoupled from HTTP and DB, making the system maintainable and testable.
 
