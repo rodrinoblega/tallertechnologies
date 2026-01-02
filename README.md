@@ -38,15 +38,17 @@ go run main.go
 
 - The service will start at http://localhost:8080.
 
-- The proyect us a database hosted in Supabase.
+- The project uses a database hosted in Supabase.
 
 - Go automatically uses the DSN in your main.go to connect to the database.
 
 ## Endpoints
-Method          Endpoint            Description
-Post            /events             Create a new Event
-GET             /events             List all events
-GET             /events/{id}        Get a single event by UUID
+| Method | Endpoint       | Description                              |
+| ------ | -------------- | ---------------------------------------- |
+| POST   | `/events`      | Create a new event                        |
+| GET    | `/events`      | List all events (ordered by start_time)   |
+| GET    | `/events/{id}` | Get a single event by UUID                |
+
 
 ## Example request
 
