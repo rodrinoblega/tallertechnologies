@@ -12,8 +12,8 @@ import (
 )
 
 func main() {
-
-	dsn := "postgresql://postgres:P4zcYFKexte6hkVn@db.awevsesovideiduznuzi.supabase.co:5432/postgres"
+	//This password must go to Secrets
+	dsn := "postgresql://neondb_owner:npg_ahKC9ALugP4n@ep-nameless-water-adxtcdet-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
 	pg, err := db.NewPostgresDB(dsn)
 	if err != nil {
 		log.Fatal(err)

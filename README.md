@@ -38,7 +38,7 @@ go run main.go
 
 - The service will start at http://localhost:8080.
 
-- The project uses a database hosted in Supabase.
+- The project uses a database hosted in Neon.
 
 - Go automatically uses the DSN in your main.go to connect to the database.
 
@@ -86,6 +86,21 @@ curl http://localhost:8080/events
 - The service uses context for all DB queries for safety and timeout handling.
 
 - Clean Architecture ensures business logic is decoupled from HTTP and DB, making the system maintainable and testable.
+
+## Testing
+
+Automated tests are a critical part of any production-grade project.
+While this project currently does not include tests, the following areas should be covered in a complete test suite:
+
+- Use Cases / Business Logic: Ensure input validation, event creation, and retrieval work correctly.
+
+- Repository / Database Layer: Verify proper interaction with PostgreSQL, including insertions and queries.
+
+- Handlers / API Endpoints: Validate HTTP responses, status codes, and JSON encoding/decoding.
+
+- Edge Cases & Error Handling: Test invalid inputs, overlapping events, and database errors.
+
+Implementing tests would greatly increase confidence in correctness, maintainability, and future refactoring.
 
 ## Questions
 
