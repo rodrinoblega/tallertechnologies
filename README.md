@@ -40,7 +40,7 @@ go run main.go
 
 - The project uses a database hosted in Neon.
 
-- Go automatically uses the DSN in your main.go to connect to the database.
+- Go automatically uses the DSN in main.go to connect to the database.
 
 ## Endpoints
 | Method | Endpoint       | Description                              |
